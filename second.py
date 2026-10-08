@@ -12,7 +12,7 @@ def cislo_text(cislo):
             8 :"osm",
             9 : "devet"
     }
-    desitky = {10 : "seset",
+    desitky1 = {10 : "deset",
             11 : "jedenact",
             12 : "dvanact",
             13 : "trinact",
@@ -21,25 +21,51 @@ def cislo_text(cislo):
             16 : "sestnact",
             17 : "sedmnact",
             18 : "osmnact",
-            19 : "devatenact",
-            20 : "dvacet",
-            30 : "tricet",
-            40 : "ctyricet",
-            50 : "padesat",
-            60 : "sedesat",
-            70 : "sedmdesat",
-            80 : "osmdesat",
-            90 : "devadesat"
+            19 : "devatenact"
+    }
+    desitky = {
+            2 : "dvacet",
+            3 : "tricet",
+            4 : "ctyricet",
+            5 : "padesat",
+            6 : "sedesat",
+            7 : "sedmdesat",
+            8 : "osmdesat",
+            9 : "devadesat"
             }
-    if int(cislo) < 10:
-        return()
 
+    
+    if -1 < int(cislo) < 10:
+        return(dict[int(cislo)])
+    
+    elif 9 < int(cislo) < 20:
+        return(desitky1[int(cislo)])
+    
+    elif int(cislo) == 100:
+        cislo = "sto"
 
-
+    elif 19 < int(cislo) < 100:
+        f = int(cislo) // 10
+        g = int(cislo) % 10
+        l = dict[g]
+        if l == "nula":
+            l = ""
+        return(desitky[f] + " " + l)
+    elif int(cislo) < 0:
+        return "zadal jste cislo v minusu"
+    else:
+        return "zadal jste cislo mimo 0-100"
 
     return cislo
 
 if __name__ == "__main__":
-    cislo = int(input("Zadej číslo (0-100): "))
+    smg = True
+    while smg:
+
+        cislo = input("Zadej číslo (0-100): ")
+        if cislo.lstrip("-").isdigit():
+            smg = False
+        else:
+            print("nezadal jste cislici")
     text = cislo_text(cislo)
     print(text)
