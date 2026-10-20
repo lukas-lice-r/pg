@@ -24,3 +24,5 @@ if __name__ == "__main__":
     cislo = int(input("Zadej maximum: "))
     prvocisla = vrat_prvocisla(cislo)
     print(prvocisla)
+
+    
