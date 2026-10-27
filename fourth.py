@@ -64,6 +64,8 @@ if __name__ == "__main__":
     print(je_tah_mozny(kral, (6, 6), obsazene_pozice))  # False (příliš daleko - o 2 pole)
     print(je_tah_mozny(kral, (0, 4), obsazene_pozice))  # False (mimo šachovnici)
 
+    print()
+
     # Testy pro jezdce
     print(je_tah_mozny(jezdec, (5, 4), obsazene_pozice))  # True (tvar L: 2 nahoru, 1 doprava)
     print(je_tah_mozny(jezdec, (5, 5), obsazene_pozice))  # False (obsazeno)
