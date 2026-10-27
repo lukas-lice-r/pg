@@ -27,7 +27,6 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
         
 
     
-    
     # 3. KROK: Pohyb podle typu figury
     if typ == "král":
         # Král se může pohnout maximálně o 1 pole v jakémkoliv směru.

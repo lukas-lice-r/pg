@@ -1,4 +1,4 @@
-def jaccardova_mnozina():
+'''def jaccardova_mnozina():
 
 
 
@@ -18,4 +18,21 @@ def jaccardova_mnozina():
 
 
 if __name__ == "__main__":
-    print(jaccardova_mnozina())
+    print(jaccardova_mnozina())'''
+
+def game(guess, word):
+    letters = list(guess)
+    lettersw = list(word)
+
+
+
+
+
+if __name__ == "__main__":
+    guess = "cas"
+    word = input("zadejte slovo ")
+    print(game(guess, word))
+
+
+
+
