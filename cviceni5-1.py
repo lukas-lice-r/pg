@@ -11,7 +11,6 @@ def inkrementuj_cisla(data):
                 result.append(str(int(item) +1))
             except ValueError:
                 result.append(item)
-
     print(result)
 
     
