@@ -67,4 +67,4 @@ if __name__ == "__main__":
     for model in models:
         print(model)'''
     print("ahoj")
-    download_rates()
+    print(download_rates())
