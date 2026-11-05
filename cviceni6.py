@@ -24,10 +24,22 @@ def get_model_names(prefix):
     for model in g["models"]:
         models.append(model["name"])
 
-    
-
     return [models]
 
+'''def kurzy():
+    r = requests.get(url2)
+    if r.status_code != 200:
+        return {}
+    g = r.text
+
+    value = g.splitlines()[2:]
+    data = {}
+    values = value.split("|")
+    print(values)
+    
+
+
+    return '''
 
 
 if __name__ == "__main__":
@@ -39,7 +51,9 @@ if __name__ == "__main__":
         print(f"Usage: {sys.argv[0]} prefix")
         sys.exit()'''
 
-    prefix = "ni"                    #sys.argv[1]
+    '''prefix = "ni"                    #sys.argv[1]
     models = get_model_names(prefix)
     for model in models:
-        print(model)
+        print(model)'''
+    print("ahoj")
+    kurzy()
