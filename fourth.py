@@ -42,7 +42,7 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
         x = abs(aktualni_pozice[0] - cilova_pozice[0])
         y = abs(aktualni_pozice[1] - cilova_pozice[1])
 
-        if (x, y) in [(1, 2), (2, 1), (1, 3), (3, 1)]:
+        if (x, y) in [(1, 2), (2, 1)]:
             return True
         else:
             pass
