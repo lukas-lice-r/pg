@@ -80,7 +80,7 @@ def print_file_type(file_name):
 if __name__ == '__main__':
     # přidej try-catch blok, odchyť obecnou vyjímku Exception a vypiš ji
     try:
-        file_name = "kitten" # "kitten.png" "kitten.gif" "kitten.jpeg"
+        file_name = sys.argv[1]          #"kitten" # "kitten.png" "kitten.gif" "kitten.jpeg"
         print_file_type(file_name)
 
     except Exception as e:
