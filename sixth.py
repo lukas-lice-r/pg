@@ -31,7 +31,7 @@ def download_url_and_get_all_hrefs(url):
 
 if __name__ == "__main__":
     try:
-        url = 'https://www.jcu.cz/cz/' #sys.argv[1]
+        url = sys.argv[1]    #'https://www.jcu.cz/cz/'
         print(download_url_and_get_all_hrefs(url))
     # osetrete potencialni chyby pomoci vetve except
     except Exception as e:
